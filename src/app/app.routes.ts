@@ -7,15 +7,17 @@ import { BookTickets } from './book-tickets/book-tickets';
 import { AddEvent } from './add-event/add-event';
 import { UpdateEvent } from './update-event/update-event';
 import { About } from './about/about';
+import { EventDetails } from './event-details/event-details';
 
 export const routes: Routes = [
     // {path: "", pathMatch:"full", component: App},
-    {path: "", component: Home},
+    {path: "", component: App},
     {path: "login", component: Login},
     {path: "profile", component: Profile},
     {path: "book-tickets", component: BookTickets},
     {path: "add-event", component: AddEvent},
     {path: "update-event", component: UpdateEvent},
     {path: "about", component: About},
-    {path: "home", component: Home}
+    {path: "home", component: Home},
+    {path: "details", component: EventDetails},
 ];
