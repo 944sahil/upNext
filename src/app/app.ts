@@ -8,5 +8,11 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('upNext');
+  protected title = signal('upNext');
+
+  changeTitle() {
+    this.title.update((prv: string) => {
+      return (prv + ' Clicked');
+    });
+  }
 }
