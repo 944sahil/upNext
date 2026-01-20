@@ -11,11 +11,13 @@ import { EventDetails } from './event-details/event-details';
 import { PastBookings } from './past-bookings/past-bookings';
 import { UpcomingBookings } from './upcoming-bookings/upcoming-bookings';
 import { Admin } from './admin/admin';
+import { Register } from './register/register';
 
 export const routes: Routes = [
     // {path: "", pathMatch:"full", component: App},
     {path: "", component: App},
     {path: "login", component: Login},
+    {path: "register", component: Register},
     {path: "profile", component: Profile},
     {path: "book-tickets", component: BookTickets},
     {path: "add-event", component: AddEvent},
