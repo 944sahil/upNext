@@ -8,6 +8,8 @@ import { AddEvent } from './add-event/add-event';
 import { UpdateEvent } from './update-event/update-event';
 import { About } from './about/about';
 import { EventDetails } from './event-details/event-details';
+import { PastBookings } from './past-bookings/past-bookings';
+import { UpcomingBookings } from './upcoming-bookings/upcoming-bookings';
 
 export const routes: Routes = [
     // {path: "", pathMatch:"full", component: App},
@@ -20,4 +22,6 @@ export const routes: Routes = [
     {path: "about", component: About},
     {path: "home", component: Home},
     {path: "details", component: EventDetails},
+    {path: "pastBookings", component: PastBookings},
+    {path: "upcomingBookings", component: UpcomingBookings},
 ];
