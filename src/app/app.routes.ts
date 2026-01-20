@@ -10,6 +10,7 @@ import { About } from './about/about';
 import { EventDetails } from './event-details/event-details';
 import { PastBookings } from './past-bookings/past-bookings';
 import { UpcomingBookings } from './upcoming-bookings/upcoming-bookings';
+import { Admin } from './admin/admin';
 
 export const routes: Routes = [
     // {path: "", pathMatch:"full", component: App},
@@ -24,4 +25,5 @@ export const routes: Routes = [
     {path: "details", component: EventDetails},
     {path: "pastBookings", component: PastBookings},
     {path: "upcomingBookings", component: UpcomingBookings},
+    {path: "admin", component: Admin}
 ];
