@@ -1,0 +1,88 @@
+<div class="container-fluid min-vh-100 bg-primary p-2">
+  <!-- Top Navbar -->
+  <div class="bg-white rounded-3 shadow-sm p-1 mb-4 d-flex align-items-center gap-3">
+    <!-- Logo -->
+    <div class="d-flex align-items-center gap-2">
+      <img
+        src="/UpNextLogo.png"
+        alt="UpNext Logo"
+        class="rounded-circle"
+        style="width: 48px; height: 48px; object-fit: cover;"
+        routerLink="/home"
+      />
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="btn btn-light fw-semibold" routerLink="/home">Home</button>
+    <button class="btn btn-light fw-semibold" routerLink="/about">About us</button>
+
+    <!-- Search -->
+    <div class="flex-grow-1 position-relative mx-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search"
+      />
+      <span
+        class="position-absolute top-50 end-0 translate-middle-y me-3"
+      >
+        🔍
+      </span>
+    </div>
+
+    <!-- Profile Button -->
+    <button class="btn btn-light fw-semibold" routerLink="/profile">Profile</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="row g-4">
+    <!-- Left Card - User Info -->
+    <div class="col-md-6">
+      <div class="bg-white rounded-4 p-5 h-100 shadow-sm d-flex flex-column align-items-center">
+        <!-- Avatar -->
+        <div
+          class="rounded-circle bg-light d-flex align-items-center justify-content-center mb-4"
+          style="width: 120px; height: 120px;"
+        >
+          <span style="font-size: 64px;">👤</span>
+        </div>
+
+        <!-- User Details -->
+        <div class="w-75 mb-3">
+          <div class="bg-secondary bg-opacity-25 text-center rounded-pill py-2 fw-semibold">
+            FullName
+          </div>
+        </div>
+
+        <div class="w-75 mb-3">
+          <div class="bg-secondary bg-opacity-25 text-center rounded-pill py-2 fw-semibold">
+            Email
+          </div>
+        </div>
+
+        <div class="w-75">
+          <div class="bg-secondary bg-opacity-25 text-center rounded-pill py-2 fw-semibold">
+            Date of Birth
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Card - Events -->
+    <div class="col-md-6">
+      <div class="bg-white rounded-4 p-5 h-100 shadow-sm d-flex flex-column justify-content-center align-items-center gap-4">
+        <button class="btn btn-secondary btn-lg w-75">
+          Your events
+        </button>
+
+        <button class="btn btn-secondary btn-lg w-75">
+          Upcoming events
+        </button>
+
+        <button class="btn btn-secondary btn-lg w-75">
+          Past events
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

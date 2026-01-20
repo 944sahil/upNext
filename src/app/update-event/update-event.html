@@ -1,0 +1,66 @@
+<div class="container-fluid min-vh-100 bg-primary p-2">
+  <!-- Navbar -->
+  <div class="bg-white rounded-3 shadow-sm p-1 mb-4 d-flex align-items-center gap-3">
+    <!-- Logo -->
+    <div class="d-flex align-items-center gap-2">
+      <img
+        src="/UpNextLogo.png"
+        alt="UpNext Logo"
+        class="rounded-circle"
+        style="width: 48px; height: 48px; object-fit: cover;"
+        routerLink="/home"
+      />
+    </div>
+
+    <button class="btn btn-light fw-semibold" routerLink="/home">Home</button>
+    <button class="btn btn-light fw-semibold" routerLink="/about">About us</button>
+
+    <div class="flex-grow-1 position-relative mx-3">
+      <input type="text" class="form-control" placeholder="Search" />
+      <span class="position-absolute top-50 end-0 translate-middle-y me-3">🔍</span>
+    </div>
+
+    <button class="btn btn-light fw-semibold" routerLink="/profile">Profile</button>
+  </div>
+
+  <!-- Main Card -->
+  <div class="bg-white rounded-4 p-4 shadow-sm">
+    <div class="row g-4">
+      <!-- Left: Event Form -->
+      <div class="col-md-6">
+        <div class="bg-white border rounded-4 p-4 h-100">
+          <div class="d-flex flex-column gap-3">
+            <input type="text" class="form-control" placeholder="Title" />
+            <input type="date" class="form-control" placeholder="Date" />
+            <input type="time" class="form-control" placeholder="Start time" />
+            <input type="time" class="form-control" placeholder="End time" />
+            <input type="text" class="form-control" placeholder="Location" />
+            <input type="text" class="form-control" placeholder="Guest" />
+            <input type="text" class="form-control" placeholder="Organizer" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Image Upload -->
+      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center gap-3">
+        <div
+          class="bg-light rounded-4 d-flex align-items-center justify-content-center"
+          style="width: 100%; height: 300px;"
+        >
+          <span class="fw-semibold text-muted">Image</span>
+        </div>
+
+        <button class="btn btn-success px-4 fw-semibold">
+          Add Image
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom Button -->
+    <div class="mt-4">
+      <button class="btn btn-secondary w-100 fw-semibold py-2">
+        Update Event
+      </button>
+    </div>
+  </div>
+</div>

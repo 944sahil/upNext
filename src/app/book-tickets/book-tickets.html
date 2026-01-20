@@ -1,0 +1,113 @@
+<div class="container-fluid min-vh-100 bg-primary p-2">
+  <!-- Top Navbar (UNCHANGED) -->
+  <div class="bg-white rounded-3 shadow-sm p-1 mb-4 d-flex align-items-center gap-3">
+    <!-- Logo -->
+    <div class="d-flex align-items-center gap-2">
+      <img
+        src="/UpNextLogo.png"
+        alt="UpNext Logo"
+        class="rounded-circle"
+        style="width: 48px; height: 48px; object-fit: cover;"
+      />
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="btn btn-light fw-semibold">Home</button>
+    <button class="btn btn-light fw-semibold">About us</button>
+
+    <!-- Search -->
+    <div class="flex-grow-1 position-relative mx-3">
+      <input type="text" class="form-control" placeholder="Search" />
+      <span class="position-absolute top-50 end-0 translate-middle-y me-3">
+        🔍
+      </span>
+    </div>
+
+    <!-- Profile Button -->
+    <button class="btn btn-light fw-semibold" routerLink="/profile">Profile</button>
+  </div>
+
+  <!-- MAIN CARD -->
+  <div class="bg-white rounded-4 p-4 shadow-sm">
+    <!-- Top Section -->
+    <div class="row g-4 mb-4">
+      <!-- Event Image -->
+      <div class="col-md-6">
+        <div class="rounded-4 overflow-hidden h-100">
+          <img
+            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1"
+            alt="Event"
+            class="img-fluid w-100 h-100"
+            style="object-fit: cover;"
+          />
+        </div>
+      </div>
+
+      <!-- Event Details -->
+      <div class="col-md-6">
+        <div class="d-flex flex-column gap-3 align-items-center">
+          <div class="bg-secondary bg-opacity-25 rounded-pill px-4 py-2 w-75 text-center fw-semibold">
+            Title
+          </div>
+
+          <div class="bg-secondary bg-opacity-25 rounded-pill px-4 py-2 w-75 text-center fw-semibold">
+            Guest
+          </div>
+
+          <div class="bg-secondary bg-opacity-25 rounded-pill px-4 py-2 w-75 text-center fw-semibold">
+            Date
+          </div>
+
+          <div class="bg-secondary bg-opacity-25 rounded-pill px-4 py-2 w-75 text-center fw-semibold">
+            Start time
+          </div>
+
+          <div class="bg-secondary bg-opacity-25 rounded-pill px-4 py-2 w-75 text-center fw-semibold">
+            Location
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="row align-items-center g-3">
+      <!-- Attendees -->
+      <div class="col-md-8">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="bg-secondary bg-opacity-25 rounded-pill px-3 py-2 text-center fw-semibold">
+              Person1
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="bg-secondary bg-opacity-25 rounded-pill px-3 py-2 text-center fw-semibold">
+              ID
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="bg-secondary bg-opacity-25 rounded-pill px-3 py-2 text-center fw-semibold">
+              Person2
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="bg-secondary bg-opacity-25 rounded-pill px-3 py-2 text-center fw-semibold">
+              ID
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="col-md-4 d-flex flex-column gap-3 align-items-end">
+        <button class="btn btn-info fw-semibold px-4">
+          Total
+        </button>
+
+        <button class="btn btn-success fw-semibold px-4">
+          Add person
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
