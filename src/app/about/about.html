@@ -1,1 +1,92 @@
-<p>about works!</p>
+<div class="container-fluid min-vh-100 bg-primary p-2">
+  <!-- Top Navbar -->
+  <div
+    class="bg-white rounded-3 shadow-sm p-1 my-2 d-flex align-items-center gap-3"
+    style="background-color: rgb(255, 255, 255, 0.75) !important;"
+  >
+    <!-- Logo -->
+    <div class="d-flex align-items-center gap-2">
+      <img
+        src="/UpNextLogo.png"
+        alt="UpNext Logo"
+        class="rounded-circle"
+        style="width: 48px; height: 48px; object-fit: cover;"
+        routerLink="/home"
+      />
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="btn btn-light fw-semibold" routerLink="/home">Home</button>
+    <button class="btn btn-light fw-semibold" routerLink="/about">About us</button>
+
+    <!-- Search -->
+    <div class="flex-grow-1 position-relative mx-3">
+      <input type="text" class="form-control" placeholder="Search" />
+      <span class="position-absolute top-50 end-0 translate-middle-y me-3">
+        🔍
+      </span>
+    </div>
+
+    <!-- Profile Button -->
+    <button class="btn btn-light fw-semibold" routerLink="/profile">
+      Profile
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="bg-white rounded-4 shadow-sm p-5">
+    <!-- Header -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">About UpNext</h2>
+      <p class="text-muted mt-2">
+        Discover, manage, and stay connected to events that matter.
+      </p>
+    </div>
+
+    <!-- Sections -->
+    <div class="row g-4">
+      <!-- Mission -->
+      <div class="col-md-4">
+        <div class="border rounded-4 p-4 h-100">
+          <h5 class="fw-semibold mb-3">Our Mission</h5>
+          <p class="text-muted">
+            UpNext is built to simplify event discovery and management.
+            Whether you're hosting or attending, we help you stay organized
+            and never miss what’s coming next.
+          </p>
+        </div>
+      </div>
+
+      <!-- What We Do -->
+      <div class="col-md-4">
+        <div class="border rounded-4 p-4 h-100">
+          <h5 class="fw-semibold mb-3">What We Do</h5>
+          <ul class="text-muted mb-0">
+            <li>Create and manage events</li>
+            <li>Track upcoming & past events</li>
+            <li>Invite guests and organizers</li>
+            <li>Centralize event details</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Why UpNext -->
+      <div class="col-md-4">
+        <div class="border rounded-4 p-4 h-100">
+          <h5 class="fw-semibold mb-3">Why UpNext?</h5>
+          <p class="text-muted">
+            Clean design, intuitive workflows, and powerful tools —
+            UpNext focuses on what matters most: your events and your time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Callout -->
+    <div class="mt-5 text-center">
+      <div class="bg-secondary bg-opacity-25 rounded-pill d-inline-block px-5 py-2 fw-semibold">
+        Built with Angular & Bootstrap
+      </div>
+    </div>
+  </div>
+</div>
