@@ -1,66 +1,80 @@
 <div class="container-fluid p-0 min-vh-100 d-flex flex-column" style="background-color: #1C4D8D;">
 
   <div class="p-3">
-    <div class="d-flex align-items-center justify-content-between px-4 py-3 rounded-4 shadow-lg" style="background-color: #0F2854; border: 1px solid #4988C4;">
-      <div class="d-flex align-items-center gap-3">
-        <img src="/UpNextLogo.png" width="45" height="45" class="rounded-circle bg-white p-1">
-        <button class="btn fw-bold px-3 shadow-sm" style="background-color: #BDE8F5; color: #0F2854; border-radius: 8px;" routerLink="/home">Home</button>
-        <button class="btn fw-bold px-3 shadow-sm border-0" style="background-color: #BDE8F5; color: #0F2854; border-radius: 8px;" routerLink="/about">About us</button>
+    <div class="bg-white rounded-3 shadow-sm p-1 mx-4 my-2 d-flex align-items-center gap-3 mx-2"
+      style="background-color: rgb(255, 255, 255, 0.75) !important;">
+      <!-- Logo -->
+      <div class="d-flex align-items-center gap-2">
+        <img src="/UpNextLogo.png" alt="UpNext Logo" class="rounded-circle"
+          style="width: 48px; height: 48px; object-fit: cover;" routerLink="/home" />
       </div>
 
-      <div class="input-group w-50 shadow-sm">
-        <input type="text" class="form-control border-0 px-3" placeholder="Search events..." style="border-radius: 10px 0 0 10px; background-color: #f8f9fa;">
-        <span class="input-group-text bg-white border-0" style="border-radius: 0 10px 10px 0;">🔍</span>
-      </div>
+      <!-- Navigation Buttons -->
+      <button class="btn btn-light fw-semibold" routerLink="/home">Home</button>
+      <button class="btn btn-light fw-semibold" routerLink="/about">About us</button>
 
-      <!-- <button class="btn fw-bold px-4" style="background-color: #BDE8F5; color: #0F2854; border-radius: 8px;">Login/Signup</button> -->
+      <!-- Search -->
+      <div class="flex-grow-1 position-relative mx-3">
+        <input type="text" class="form-control" placeholder="Search" />
+        <button type="submit"
+          class="position-absolute top-50 end-0 translate-middle-y me-2 btn btn-link p-0 text-decoration-none"
+          style="border-radius: 0 10px 10px 0; cursor: pointer;" onclick="console.log('Search triggered!')">
+          🔍
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div class="mx-4 mb-4 flex-grow-1 d-flex rounded-5 overflow-hidden shadow-lg border-0">
-    
-    <div class="row g-0 w-100">
-      
-      <div class="col-md-6 d-flex align-items-center justify-content-center position-relative overflow-hidden bg-white">
-        <video autoplay muted loop playsinline class="position-absolute w-100 h-100" style="object-fit: cover; z-index: 1;">
-          <source src="/loginvideo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+    <div class="mx-4 mb-4 flex-grow-1 d-flex rounded-5 overflow-hidden shadow-lg border-0">
 
-        <!-- <img src="/UpNextLogo.png" class="img-fluid position-relative shadow-lg rounded-circle p-2 bg-white bg-opacity-75" style="max-width: 60%; z-index: 2;" alt="UpNext Logo"> -->
-      </div>
+      <div class="row g-0 w-100">
 
-      <div class="col-md-6 d-flex flex-column position-relative overflow-hidden">
-        
-        <div class="position-absolute w-100 h-100" style="
+        <div
+          class="col-md-6 d-flex align-items-center justify-content-center position-relative overflow-hidden bg-white">
+          <video autoplay muted loop playsinline class="position-absolute w-100 h-100"
+            style="object-fit: cover; z-index: 1;">
+            <source src="/loginvideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          
+        </div>
+
+        <div class="col-md-6 d-flex flex-column position-relative rounded-5overflow-hidden bg-white">
+
+          <div class="position-absolute w-100 h-100" style="
             background: url('/UpNextLogo.png') center/cover no-repeat;
             filter: blur(25px) brightness(0.7);
             transform: scale(1.2);
             z-index: 1;">
-        </div>
-
-        <div class="flex-grow-1 d-flex flex-column align-items-center justify-content-center p-5 position-relative" 
-             style="background-color: rgba(73, 136, 196, 0.7); z-index: 2;">
-          
-          <div class="w-75 p-4 rounded-5 shadow-lg mb-4" style="background-color: rgba(15, 40, 84, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(189, 232, 245, 0.3);">
-            <input type="text" class="form-control border-0 mb-3 py-3 rounded-4 shadow-sm" placeholder="Enter Username" style="background-color: #BDE8F5; color: #0F2854;">
-            <input type="password" class="form-control border-0 mb-2 py-3 rounded-4 shadow-sm" placeholder="Enter Password" style="background-color: #BDE8F5; color: #0F2854;">
-            
-            <p class="text-start mb-4 fw-semibold" style="cursor: pointer; font-size: 0.9rem; color: #BDE8F5;">ForgetPassword</p>
-            
-            <button class="btn w-100 py-2 fw-bold shadow-sm" style="background-color: #BDE8F5; color: #0F2854; border-radius: 50px; font-size: 1.2rem;">
-              Login
-            </button>
           </div>
 
-          <div class="px-5 py-2 fw-bold shadow-sm rounded-pill mt-2" style="background-color: #BDE8F5; color: #0F2854; cursor: pointer;">
-             Not a user? <a href="/register">Register Here.</a>
+          <div class="flex-grow-1 d-flex flex-column align-items-center justify-content-center p-5 position-relative"
+            style="background-color: rgba(73, 136, 196, 0.7); z-index: 2;">
+
+            <div class="w-75 p-4 rounded-5 shadow-lg mb-4"
+              style="background-color: rgba(15, 40, 84, 0.4); backdrop-filter: blur(10px); border: 1px solid rgba(189, 232, 245, 0.3);">
+              <input type="text" class="form-control border-0 mb-3 py-3 rounded-4 shadow-sm"
+                placeholder="Enter Username" style="background-color: #BDE8F5; color: #0F2854;">
+              <input type="password" class="form-control border-0 mb-2 py-3 rounded-4 shadow-sm"
+                placeholder="Enter Password" style="background-color: #BDE8F5; color: #0F2854;">
+
+              <p class="text-start mb-4 fw-semibold" style="cursor: pointer; font-size: 0.9rem; color: #BDE8F5;">
+                ForgetPassword</p>
+
+              <button class="btn w-100 py-2 fw-bold shadow-sm"
+                style="background-color: #BDE8F5; color: #0F2854; border-radius: 50px; font-size: 1.2rem;">
+                Login
+              </button>
+            </div>
+
+            <div class="px-5 py-2 fw-bold shadow-sm rounded-pill mt-2"
+              style="background-color: #BDE8F5; color: #0F2854; cursor: pointer;">
+              Not a user? <a href="/register">Register Here.</a>
+            </div>
+
           </div>
 
         </div>
-
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
