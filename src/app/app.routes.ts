@@ -15,7 +15,7 @@ import { Register } from './register/register';
 
 export const routes: Routes = [
     // {path: "", pathMatch:"full", component: App},
-    {path: "", component: App},
+    {path: "", component: Home},
     {path: "login", component: Login},
     {path: "register", component: Register},
     {path: "profile", component: Profile},
